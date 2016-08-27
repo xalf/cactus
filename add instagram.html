@@ -1,0 +1,70 @@
+<html>
+	<head lang="en">
+		<meta charset="utf-8"/>
+		<title>Cactooz Add Instagram</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1;">
+  		<script src="jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+  		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header>
+			<a href="">Cactooz</a>
+			<div class="dropdown">
+ 				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+ 					<span class="glyphicon glyphicon-menu-hamburger"></span>
+ 					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-right">
+ 					<li><a href="#">help</a></li>
+ 					<li><a href="#">log out</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="dropdown menu">
+ 				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+ 					My Instagram Accounts
+ 					<span class="caret"></span>
+				</button>
+				<br/>
+				<ul class="dropdown-menu dropdown-menu-center">
+ 					<li><a href="#">
+ 						<span  class="glyphicon glyphicon-plus-sign"></span>
+ 						Add new account
+ 					</a></li>
+ 					<li>
+ 						<form>
+ 							<button>
+ 								<img src="">first account
+ 							</button>
+ 							<button href="#" class="	glyphicon glyphicon-trash delete" type="button" data-toggle="modal" data-target="#myModal"></button>
+ 							<button href="#" class="glyphicon glyphicon-ok default"></button>
+ 						</form>
+ 					</li>
+				</ul>
+  				<div class="modal fade" id="myModal" role="dialog">
+    				<div class="modal-dialog">
+      					<div class="modal-content modal-edit">
+        					<div class="modal-body">
+        						<button type="button" class="close" data-dismiss="modal">&times;</button>
+          						<p>Are you sure you want to remove your account? All data will be lost.</p>
+        					</div>
+        					<div class="modal-footer">
+          						<button type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
+          						<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+        					</div>
+      					</div>
+    				</div>
+  				</div>
+		</div>
+		<div class="main-block">
+			<h2>Instagram account</h2>
+			<form role="form">
+				<label for="inst-name">Instagram account</label>
+				<input name="inst-name" class="form-control" type="text" placeholder="Instagram account">
+				<button type="button" class="form-control btn btn-primary">Add Instagram Account</button>
+			</form>
+		</div>
+	</body>
+</html>

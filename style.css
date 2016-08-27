@@ -1,0 +1,253 @@
+@font-face{
+	src: url('fonts/OpenSans-Regular.ttf');
+	font-family: OpenSans;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	font-family: OpenSans;
+}
+
+header {
+	border-bottom: 2px solid #193848;
+	padding: 5px auto;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: block;
+	margin: 6px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+/***************header***************/
+
+header>a {
+	color: #B1C51A;
+	display: inline-block;
+	font-size: 30px;
+	font-weight: 500;
+	padding: 5px;
+}
+
+header>a:hover {
+	color: #91B005;
+}
+
+header .dropdown {
+	margin: 3px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+header .plus {
+	position: absolute;
+	height: 28px;
+	right: 42px;
+	top: 3px;
+} 
+
+header .plus span{
+	margin:0 0 3px 1px;
+}
+
+
+.btn-primary {
+	background-color: #55768c;
+	padding: 3px;
+}
+
+/*************main-block*****************/
+.main-block {
+	margin-top: 60px;
+}
+
+.main-block h2 {
+	font-size: 24px;
+	margin: 10px;
+	text-align: center;
+}
+
+.main-block form {
+	padding: 5%;
+}
+
+.main-block input {
+	margin-bottom: 10px;
+}
+
+#create, #prompt {
+	color: #193848;
+	text-decoration: underline;
+}
+
+#create:hover, #prompt:hover {
+	text-decoration: none;
+}
+
+#create {
+	font-size: 14px;
+}
+
+#prompt {
+	float: right;
+	font-size: 12px;
+}
+
+form div {
+	text-align: center;
+	margin: 5% 0;
+}
+/***************feed***************/
+#acting-account {
+	font-size: 22px;
+	font-weight: 500;
+}
+
+#acting-account img {
+	height: 30px;
+	margin: 0 10px 0 20px;
+	width: 30px;
+}
+/***********menu**************/
+
+.menu {
+	margin: 10px auto;
+	text-align: center;
+	width: 250px;
+}
+
+.menu img {
+	height: 15px;
+	width: 15px;
+}
+
+.menu-button {
+	margin: 5px;
+	padding: 3px;
+}
+
+.dropdown-menu-center {
+	float: none;
+	min-width: 250px;
+}
+
+ .open>.dropdown-menu-center {
+	display: inline-block;
+}
+
+.delete,.default {
+	float: right;
+}
+
+.dropdown-menu-center li a {
+	clear: none;
+	display: inline-block;
+	padding: 6px;
+}
+
+.dropdown-menu-center li a span {
+	margin-right: 4px;
+}
+
+.dropdown-menu-center li img{
+	margin: 0 7px 1px 0;
+	height: 18px;
+	width: 18px;
+}
+li form button{
+	background-color: #fff;
+	border-style: none;
+	padding: 8.5px;
+}
+li form button:first-child{
+	padding: 5px;
+}
+li form button:hover{
+	background-color: #efefef;
+}
+/***************foto-content*****************/
+.foto-content {
+	margin: 6% 3%;
+}
+
+.foto-content span {
+	font-size: 18px;
+}
+
+.foto-content img {
+	height: auto;
+	margin-top: 2%;
+	width: 100%;
+}
+/*************FAQ****************/
+.question h3 {
+	border-bottom: 2px solid #193848;
+	border-top: 2px solid #193848;
+	background-color: #c7d6e0;
+	color: #193848;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 2% 5%;
+}
+
+.question span {
+	display: block;
+	padding: 2% 5%;
+}
+.modal-edit {
+	margin: 0;
+	text-align: left;
+}
+.modal-edit div{
+	margin: 0;
+	text-align: left;
+}
+.modal-edit button{
+	float: right;
+	margin-left: 5px;
+}
+
+@media screen and (min-width: 600px){
+	.main-block{
+		margin: 60px auto 0;
+		max-width: 600px
+	}
+
+	.dropdown-menu-center {
+		min-width: 300px;
+	}
+
+	.dropdown-menu-center li a {
+		font-size: 19px;
+		padding: 8px;
+	}
+	.dropdown-menu-center li button{
+		font-size: 19px;
+	}
+
+	.dropdown-menu-center li img{
+		margin: -2px 5px 0 0;
+		height: 28px;
+		width: 28px;
+	} 
+	li form button{
+		padding:9px
+	}
+	#add-new-account span{
+		margin: 0 5px 0 2px;
+	}
+	.menu{
+		width: 300px;
+	}
+}
+
